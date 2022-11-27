@@ -1,6 +1,8 @@
 <?php
 error_reporting(0);
 
+header('Access-Control-Allow-Origin: *');
+
 $url = htmlentities($_GET['url']);
 
 if (!$url){
